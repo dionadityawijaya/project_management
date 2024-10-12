@@ -1,0 +1,10 @@
+^C:\USERS\LENOVO\DESKTOP\PRODUCT_MANAGEMENT\BUILD\CMAKEFILES\45F3F14A8E0AEA6C9409065916B26114\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/LENOVO/Desktop/product_management -BC:/Users/LENOVO/Desktop/product_management/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/LENOVO/Desktop/product_management/build/product_management.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
